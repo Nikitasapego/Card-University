@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Accordion</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+    
+                <div class="header__top">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <div class="header__top-left">
+                        <a href="index.html" class="header__logo">
+                            <img src="assets/images/icons/logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="header__location" data-da=".menu__list-location, 768, first">
+                            <img src="assets/images/icons/city.png" alt="city">
+                            <span>Москва</span>
+                        </a>
+                    </div>
+                    <form class="search" action="/" method="get" data-da=".menu__list-search, 768, first">
+                        <button class="search__btn" type="submit">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7 7.64999C1.7 4.3639 4.36391 1.7 7.65001 1.7C10.9361 1.7 13.6 4.3639 13.6 7.64999C13.6 9.25281 12.9662 10.7076 11.9356 11.7774C11.9063 11.7999 11.8781 11.8246 11.8513 11.8515C11.8245 11.8783 11.7998 11.9065 11.7773 11.9358C10.7075 12.9663 9.25274 13.6 7.65001 13.6C4.36391 13.6 1.7 10.9361 1.7 7.64999ZM12.4249 13.6272C11.1162 14.674 9.45622 15.3 7.65001 15.3C3.42502 15.3 0 11.875 0 7.64999C0 3.42502 3.42502 0 7.65001 0C11.875 0 15.3 3.42502 15.3 7.64999C15.3 9.4563 14.674 11.1164 13.627 12.4251L16.7509 15.549C17.0828 15.8809 17.0828 16.4191 16.7509 16.751C16.4189 17.083 15.8807 17.083 15.5488 16.751L12.4249 13.6272Z" fill="#A7A7A7" />
+                            </svg>
+                        </button>
+                        <input class="search__input" type="text" placeholder="Учебное заведение, специальность или профессия">
+                    </form>
+    
+                    <div class="header__top-right">
+                        <a href="#" class="header__favorites">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.0125L7.9125 15.0225C4.05 11.52 1.5 9.21 1.5 6.375C1.5 4.065 3.315 2.25 5.625 2.25C6.93 2.25 8.1825 2.8575 9 3.8175C9.8175 2.8575 11.07 2.25 12.375 2.25C14.685 2.25 16.5 4.065 16.5 6.375C16.5 9.21 13.95 11.52 10.0875 15.03L9 16.0125Z" fill="#A7A7A7" />
+                            </svg>
+                            <span>1</span>
+                        </a>
+                        <a href="#" class="header__profile" data-da=".menu__list-profile, 768, first">
+                            <span>Екатерина</span>
+                            <img src="assets/images/icons/user-profile.png" alt="profile">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="header__bottom">
+                    <div class="header__menu menu">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__list-profile"></li>
+                                <li class="menu__list-location"></li>
+                                <li class="menu__list-search"></li>
+                                <li><a href="#" class="menu__link active">Вузы</a></li>
+                                <li><a href="#" class="menu__link">Колледжи</a></li>
+                                <li><a href="#" class="menu__link">Техникумы</a></li>
+                                <li><a href="#" class="menu__link">Училища</a></li>
+                                <li><a href="#" class="menu__link">Специальности</a></li>
+                                <li><a href="#" class="menu__link">Профессии</a></li>
+                                <li><a href="#" class="menu__link">Профессии</a></li>
+                                <li><a href="#" class="menu__link">Отзывы</a></li>
+                                <li><a href="#" class="menu__link">Учебным заведениям</a></li>
+                                <li><a href="#" class="menu__link">Тест на профориентацию</a></li>
+                                
+                                <a href="#" class="menu__link-arrow">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L1 13" stroke="#222222" stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div class="container">
+            
+            <section class="section">
+                <div class="container">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is Web Development?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is HTML?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What are some basic technical skills of a Front-End developer?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <ul style="padding-left: 1rem;">
+                                        <li>HTML, CSS, JavaScript</li>
+                                        <li>Frameworks (CSS and JavaScript frameworks)</li>
+                                        <li>Responsive Design</li>
+                                        <li>Version Control/Git</li>
+                                        <li>Testing/Debugging</li>
+                                        <li>Browser Developer Tools</li>
+                                        <li>Web Performance</li>
+                                        <li>SEO (Search Engine Optimization)</li>
+                                        <!-- <li>CSS Preprocessing</li> -->
+                                        <li>Command Line</li>
+                                        <li>CMS (Content Management System)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is HTTP?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                What is CORS?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__content">
+                            <a href="index.html" class="footer__logo">
+                                <img src="assets/images/icons/logo.svg" alt="logo">
+                            </a>
+                            <a class="footer__link link-new" href="#">Помощник<span class=""></span></a>
+                            <a class="footer__link" href="#">О нас</a>
+                            <a class="footer__link" href="#">Обратная связь</a>
+                            <div class="footer__link contacts__socials">
+                                <a href="#">
+                                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.31965 15.9995V7.99857H7.68636L8 5.24141H5.31965L5.32367 3.86142C5.32367 3.14231 5.39689 2.75699 6.50368 2.75699H7.98325V-0.000488281H5.6162C2.773 -0.000488281 1.77227 1.33703 1.77227 3.58633V5.24172H0V7.99889H1.77227V15.9995H5.31965Z" fill="#A7A7A7"></path>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33371 8.96189C9.33371 8.96189 9.64052 8.93026 9.79767 8.77363C9.94151 8.63011 9.93652 8.35928 9.93652 8.35928C9.93652 8.35928 9.9174 7.09465 10.5501 6.90793C11.1737 6.72429 11.9745 8.13089 12.8242 8.67178C13.4661 9.08072 13.9534 8.99121 13.9534 8.99121L16.2241 8.96189C16.2241 8.96189 17.4114 8.89399 16.8485 8.0275C16.802 7.95651 16.5201 7.38631 15.1607 6.21504C13.7363 4.98899 13.9276 5.18729 15.6421 3.06619C16.6864 1.77455 17.1038 0.985989 16.9733 0.648805C16.8494 0.326281 16.0811 0.411927 16.0811 0.411927L13.5251 0.426587C13.5251 0.426587 13.3356 0.402668 13.1951 0.480598C13.0579 0.556986 12.9689 0.735222 12.9689 0.735222C12.9689 0.735222 12.5648 1.73443 12.0252 2.58472C10.8869 4.37789 10.4321 4.4728 10.2458 4.36169C9.81263 4.10166 9.92072 3.3185 9.92072 2.76218C9.92072 1.0238 10.2051 0.299275 9.36779 0.111779C9.09008 0.0492807 8.88554 0.00838655 8.17464 0.00144226C7.26251 -0.00704521 6.49091 0.00452861 6.05355 0.202827C5.76254 0.334768 5.53804 0.629515 5.67523 0.64649C5.84402 0.667323 6.2265 0.742167 6.42938 0.998334C6.69129 1.32935 6.68215 2.07161 6.68215 2.07161C6.68215 2.07161 6.83264 4.11786 6.33043 4.37172C5.9862 4.5461 5.51393 4.19039 4.4987 2.56311C3.97903 1.7298 3.58658 0.808523 3.58658 0.808523C3.58658 0.808523 3.51092 0.636459 3.37539 0.543869C3.21159 0.431988 2.98293 0.397267 2.98293 0.397267L0.554207 0.411927C0.554207 0.411927 0.189191 0.421186 0.0553247 0.568559C-0.0635756 0.698958 0.0461785 0.969785 0.0461785 0.969785C0.0461785 0.969785 1.94775 5.09855 4.10126 7.17953C6.076 9.08689 8.31765 8.96189 8.31765 8.96189H9.33371Z" fill="#A7A7A7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a class="footer__link border" href="#">studika@mail.ru</a>
+                            <a class="footer__link" href="#">Пользовательское соглашение</a>
+                            <a class="footer__link" href="#">Обработка персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__content">
+                            <h2 class="footer__title">студентам</h2>
+                            <a class="footer__link" href="#">Вузы</a>
+                            <a class="footer__link" href="#">Колледжи</a>
+                            <a class="footer__link" href="#">Техникумы</a>
+                            <a class="footer__link" href="#">Училища</a>
+                            <a class="footer__link" href="#">Специальности</a>
+                            <a class="footer__link link-new" href="#">Профессии</a>
+                            <a class="footer__link" href="#">Отзывы</a>
+                            <a class="footer__link" href="#">Тест на профориентацию</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__content">
+                            <h2 class="footer__title">учебным заведениям</h2>
+                            <a class="footer__link" href="#">Партнёрская программа</a>
+                            <a class="footer__link" href="#">Личный кабинет</a>
+                            <a class="footer__link link-new" href="#">Размещение рекламы</a>
+                            <a class="footer__link" href="#">Добавить учебное заведение</a>
+                            <a class="footer__link" href="#">Инструкция по личному кабинету</a>
+                            <a class="footer__link" href="#">Правила работы с отзывами</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__item">
+                        <div class="footer__content">
+                            <h2 class="footer__title">популярные вузы</h2>
+                            <div class="footer__univercity">
+                                <img class="footer__univercity-logo" src="assets/images/icons/logo-university1.png" alt="university">
+                                <img class="footer__univercity-image" src="assets/images/university/1.jpg" alt="university">
+                                <a class="footer__link" href="#">МГУ — Московский государственный университет имени М.В. Ломоносова</a>
+                            </div>
+                            <div class="footer__univercity">
+                                <img class="footer__univercity-logo" src="assets/images/icons/logo-university2.png" alt="university2">
+                                <img class="footer__univercity-image" src="assets/images/footer-univercity1.jpg" alt="university">
+                                <a class="footer__link" href="#">Московский государственный технический университет имени Н.Э. Баумана</a>
+                            </div>
+                            <div class="footer__univercity">
+                                <img class="footer__univercity-logo" src="assets/images/icons/logo-university3.png" alt="university3">
+                                <img class="footer__univercity-image" src="assets/images/footer-univercity2.jpg" alt="university">
+                                <a class="footer__link" href="#">Институт бизнеса и дизайна</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__copyright">&copy; 2022 | Все права защищены</div>
+        </div>
+    </footer>
+
+
+    <!--
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
