@@ -2,7 +2,7 @@
 
 Вёрстка [карточки](https://nikitasapego.github.io/Card-University/) учебного заведения
 
-#html #css #javascript
+#html #css #grid #javascript
 
  - Имеется адаптив до 320px;
  - Все файлы структурированы по папкам;
